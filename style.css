@@ -1,0 +1,97 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --accent: #b9a08a;
+  --dark: #3b2b25;
+  --text: #8a8a8a;
+  --heading: #4a4a4a;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  color: var(--text);
+  background: #fff;
+}
+h2, h3 { font-family: 'Raleway', sans-serif; font-weight: 500; color: var(--heading); }
+a { text-decoration: none; }
+.container { width: 1170px; max-width: 100%; margin: 0 auto; }
+
+/* ---------- 1. Mobile ---------- */
+.mobile { background: #fcfbfa; height: 540px; overflow: hidden; }
+.mobile__inner { position: relative; height: 100%; }
+.mobile__phone { position: absolute; left: 150px; top: 52px; width: 340px; }
+.mobile__text { position: absolute; left: 508px; top: 130px; width: 540px; }
+.mobile__text h2 { font-size: 24px; margin-bottom: 22px; }
+.mobile__text p { font-size: 13px; line-height: 22px; margin-bottom: 30px; }
+
+.checklist { list-style: none; padding-left: 40px; }
+.checklist li {
+  position: relative; padding-left: 40px;
+  font-size: 13px; line-height: 25.5px; color: #7d7d7d;
+}
+.checklist li::before {
+  content: "\f105"; font-family: FontAwesome;
+  position: absolute; left: 0; top: 3px;
+  width: 17px; height: 17px; border-radius: 50%;
+  background: var(--accent); color: #fff;
+  font-size: 12px; line-height: 17px; text-align: center;
+}
+
+/* ---------- 2. Counters ---------- */
+.counters {
+  height: 238px;
+  background: linear-gradient(90deg, #1f1815 0%, #3a2a23 55%, #54392b 100%);
+  color: #fff;
+}
+.counters__inner { display: flex; justify-content: center; padding-top: 54px; }
+.counter { width: 158px; text-align: center; }
+.counter i { font-size: 38px; color: var(--accent); font-weight: 300; }
+.counter b { display: block; font-size: 38px; font-weight: 300; margin: 14px 0 8px; letter-spacing: 1px; }
+.counter span { display: block; font-size: 11px; text-transform: uppercase; color: #e5dcd5; }
+.counter::after { content: ""; display: block; width: 24px; height: 1px; background: #fff; margin: 22px auto 0; }
+
+/* ---------- 3. Posts ---------- */
+.posts { padding: 52px 0 60px; text-align: center; }
+.posts h2 { font-size: 22px; }
+.posts__lead { width: 620px; max-width: 100%; margin: 18px auto 36px; font-size: 12px; line-height: 22px; }
+.posts__grid { display: flex; justify-content: center; gap: 24px; }
+
+.card { width: 293px; text-align: left; border: 1px solid #f1f1f1; background: #fff; }
+.card__img { position: relative; height: 174px; background-size: cover; background-position: center; }
+.date {
+  position: absolute; left: 16px; top: 16px; width: 40px; height: 48px;
+  background: #2b2b2b; color: #fff; text-align: center;
+  font-size: 10px; padding-top: 6px;
+}
+.date b { display: block; font-size: 19px; font-weight: 400; line-height: 22px; }
+.card__body { padding: 22px 22px 28px; height: 138px; }
+.card__body h3 { font-size: 16px; margin-bottom: 14px; }
+.card__body p { font-size: 11px; line-height: 17px; margin-bottom: 18px; }
+.card__body a { font-size: 11px; color: var(--accent); }
+.card__body a i { font-size: 10px; margin-left: 3px; }
+
+.card--dark { background: var(--dark); border-color: var(--dark); }
+.card--dark .card__img::before { content: ""; position: absolute; inset: 0; background: rgba(30,20,15,.6); }
+.card--dark .date { background: var(--accent); }
+.card--dark h3 { color: var(--accent); }
+.card--dark p, .card--dark a { color: #fff; }
+
+.posts__nav { margin-top: 32px; }
+.posts__nav a {
+  display: inline-block; width: 17px; height: 17px; margin: 0 3px;
+  border: 1px solid var(--accent); border-radius: 50%;
+  color: var(--accent); font-size: 14px; line-height: 14px;
+}
+
+/* ---------- 4. Logos ---------- */
+.logos {
+  height: 380px;
+  background: url(img/mountains.jpg) center / cover no-repeat #3a3532;
+}
+.logos__inner {
+  width: 900px; max-width: 100%; margin: 0 auto;
+  padding-top: 105px;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.logos__inner img { height: 170px; width: auto; }
