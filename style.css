@@ -17,7 +17,6 @@ h2, h3 { font-family: 'Raleway', sans-serif; font-weight: 500; color: var(--head
 a { text-decoration: none; }
 .container { width: 1170px; max-width: 100%; margin: 0 auto; }
 
-/* ---------- 1. Mobile ---------- */
 .mobile { background: #fcfbfa; height: 540px; overflow: hidden; }
 .mobile__inner { position: relative; height: 100%; }
 .mobile__phone { position: absolute; left: 150px; top: 52px; width: 340px; }
@@ -38,7 +37,6 @@ a { text-decoration: none; }
   font-size: 12px; line-height: 17px; text-align: center;
 }
 
-/* ---------- 2. Counters ---------- */
 .counters {
   height: 238px;
   background: linear-gradient(90deg, #1f1815 0%, #3a2a23 55%, #54392b 100%);
@@ -51,7 +49,6 @@ a { text-decoration: none; }
 .counter span { display: block; font-size: 11px; text-transform: uppercase; color: #e5dcd5; }
 .counter::after { content: ""; display: block; width: 24px; height: 1px; background: #fff; margin: 22px auto 0; }
 
-/* ---------- 3. Posts ---------- */
 .posts { padding: 52px 0 60px; text-align: center; }
 .posts h2 { font-size: 22px; }
 .posts__lead { width: 620px; max-width: 100%; margin: 18px auto 36px; font-size: 12px; line-height: 22px; }
@@ -84,7 +81,6 @@ a { text-decoration: none; }
   color: var(--accent); font-size: 14px; line-height: 14px;
 }
 
-/* ---------- 4. Logos ---------- */
 .logos {
   height: 380px;
   background: url(img/mountains.jpg) center / cover no-repeat #3a3532;
